@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Register Here</title>
+<link rel="icon" href="/images/logo.jpg">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body class="register-body">
+<nav>
+<img src="/images/logo.jpg" class="logo" alt="Logo"
+title="Tourism Booking Portal">
+<ul class="navbar">
+    <li>
+        <a href="/modules/home.html">Home</a>
+        <a href="/modules/locations.html">Locations</a>
+        <a href="/modules/packages.html">Packages</a>
+        <a href="/modules/about.html">About Us</a>
+        <a href="/modules/contact.html">Contact Us</a>
+        </li>
+</ul>
+</nav>
+<section class="registration">
+<div class="register-form">
+<h1>Register <span>Here</span></h1>
+<form action="" onsubmit="return validateform()">
+<input type="text" name="myname1" placeholder="Name" id="name"
+required>
+<input type="email" name="myemail" placeholder="Email-Id" id=""
+required>
+<input type="tel" name="myphone" placeholder="Phone No."
+id="phonenum" required>
+<input type="number" name="myage" placeholder="Age" id=""
+required>
+<h4>Gender</h4>
+<input type="radio" name="mygender" id="" required> Male
+<input type="radio" name="mygender" id=""> Female
+<h4>Departure</h4>
+<input type="datetime-local" name="departuredate" id="" required>
+<h4>Return</h4>
+<input type="datetime-local" name="returndate" id="" required>
+<h4>Travel Destination</h4>
+<input type="checkbox" name="td" id=""> Kashmir
+<input type="checkbox" name="td" id=""> Istanbul
+<input type="checkbox" name="td" id=""> Paris
+<input type="checkbox" name="td" id=""> Bali
+<input type="checkbox" name="td" id=""> Dubai
+<input type="checkbox" name="td" id=""> Geneva
+<input type="checkbox" name="td" id=""> Port Blair
+<input type="checkbox" name="td" id=""> Rome
+<br> <br>
+<h4>Package</h4>
+<input type="radio" name="locations" id="loc1" required> Bronze
+<input type="radio" name="locations" id="loc1"> Silver
+<input type="radio" name="locations" id="loc1"> Gold
+<input type="radio" name="locations" id="loc1"> Platinum
+<br> <br>
+<input type="checkbox" name="t&c" id="" checked required> I accept
+the Terms & Conditions.
+<br> <br>
+<input type="submit" value="Submit" class="submitbtn">
+</form>
+</div>
+</section>
+<!-- Footer -->
+<section class="footer">
+<div class="foot">
+<div class="footer-content">
+<div class="footlinks">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="./register.html">Register</a></li>
+<li><a href="./about.html">About Us</a></li>
+<li><a href="./contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footlinks">
+<h4>Connect</h4>
+<div class="social-icons">
+    <a href="https://www.facebook.com"
+    target="_blank"><img src="/images/fb.png"
+    style="min-width: 0%; min-height: 0%; margin-bottom:0px;"></a>
+    <a href="https://www.instagram.com"
+    target="_blank"><img src="/images/insta.jpg"
+    style="min-width: 0%; min-height: 0%; margin-bottom:0px;"></a>
+    <a href="https://www.twitter.com" target="_blank"><img
+    src="/images/twitter.jpg" style="min-width: 0%;
+    min-height: 0%; margin-bottom:0px;"></a></a>
+    <a href="https://www.linkedin.com"
+    target="_blank"><img
+    src="/images/linkedin.png" style="min-width: 0%; min-height: 0%; margin-bottom:0px;"></a><i class='bx bxl-linkedin'
+    ></i></a>
+    <a href="https://www.youtube.com" target="_blank"><img
+    src="/images/youtube.png" style="min-width: 0%; min-height: 0%; margin-bottom:0px;"></a><i
+    class='bx bxl-youtube' ></i></a>
+    </div>
+</div>
+</div>
+</div>
+<div class="end">
+<p>2024 Dreamy Tourism Booking Travels All Rights
+Reserved.<br> Treaveling Website </p>
+</div>
+</section>
+<!-- Javascript -->
+<script>
+function validateform(){
+var tel=document.getElementById("phonenum").value;
+if(tel.length<10){
+alert("Phone number must be of atleast 10 digits!");
+return false;
+} else if(isNaN(tel)){
+alert("Phone number should not include character!");
+return false;
+}
+return true;
+}
+</script>
+</body>
+</html>
